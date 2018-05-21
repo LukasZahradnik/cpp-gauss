@@ -5,7 +5,11 @@ Project {
 
     CppApplication {
         consoleApplication: true
-        files: "main.cpp"
+        files: [
+            "main.cpp",
+            "timer.cpp",
+            "timer.h",
+        ]
 
         cpp.cxxFlags: ["-mavx", "-O3", "-fopenmp"]
         cpp.dynamicLibraries: ["gomp"]
